@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Missie Codekraker</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div class="content header-content">
+        <img src="./images/harvey.png" width="80px">
+        <h1>Missie Codekraker</h1> 
+    </div>
+    </header>
+    <main>
+        <div class="content main-content">
+            <div class="intro">
+                <p>
+                    Maak kennis met White Hat Harvey. Vandaag begint zijn grootste uitdaging ooit:
+                    Missie Codekraker. Harvey probeert alle codes te ontrafelen. Maar hij kan dit
+                    niet alleen!
+                </p>
+                <p>
+                   Elk vakje bevat een codekraker. Door de goede oplossing in te vullen, ontgrendel je het volgende vakje.
+                   Los jij alle codekrakers op en help jij Harvey om Missie Codekraker te voltooien?
+                </p>
+            </div>
+            <div class="challenges">
+                <div class="challenge">
+                    <div class="door can-open js-door-open" data-door="1">
+                        <div>
+                            <span class="number">1</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="1">Open</button>
+                    <dialog data-dialog="1">
+                        <div class="dialog-content">
+                            <button class="close-button" data-close="1"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 1</h1>
+                            <p>Harvey probeert een tekst te ontcijferen. Help jij hem mee?</p>
+                            <p>!eissim ed ew neiootlov nemaS</p>
+                            <form class="answer-form">
+                                <input type="text" class="js-answer" data-input="1" />
+                                <button type="button" class="clean-button js-check-button" data-check="1">Check antwoord</button>
+                                <div class="lock-container js-lock-container" data-container="1">
+                                    <img src="./images/lock.svg" class="lock js-lock is-visible" data-lock="1">
+                                    <img src="./images/unlock.svg" class="un-lock js-un-lock is-hidden" data-unlock="1">
+                                    <img src="./images/lock-red.svg" class="lock-red js-lock-red is-hidden" data-redlock="1">
+                                </div>
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="challenge">
+                    <div class="door js-door-open" data-door="2">
+                        <div>
+                            <span class="number">2</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="2">Open</button>
+                    <dialog data-dialog="2">
+                        <div class="dialog-content">
+                            <button class="close-button" data-close="2"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 2</h1>
+                            <p>Kan jij Harvey helpen de volgende code te ontcijferen?</p>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>b</td>
+                                        <td>e</td>
+                                        <td>v</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e</td>
+                                        <td>i</td>
+                                        <td>l</td>
+                                    </tr>
+                                    <tr>
+                                        <td>i</td>
+                                        <td>g</td>
+                                        <td>i</td>
+                                    </tr>
+                                    <tr>
+                                        <td>n</td>
+                                        <td>g</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <form class="answer-form">
+                                <input type="text" class="js-answer" data-input="2" />
+                                <button type="button" class="clean-button js-check-button" data-check="2">Check antwoord</button>
+                                <div class="lock-container js-lock-container" data-container="2">
+                                    <img src="./images/lock.svg" class="lock js-lock is-visible" data-lock="2">
+                                    <img src="./images/unlock.svg" class="un-lock js-un-lock is-hidden" data-unlock="2">
+                                    <img src="./images/lock-red.svg" class="lock-red js-lock-red is-hidden" data-redlock="2">
+                                </div>
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="challenge">
+                    <div class="door js-door-open" data-door="3">
+                        <div>
+                            <span class="number">3</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="3">Open</button>
+                    <dialog data-dialog="3">
+                        <div class="dialog-content">
+                            <button class="close-button" data-close="3"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 3</h1>
+                            <p>Oei, deze codekraker is een stuk moeilijker! Kan jij Harvey helpen deze opdracht op te lossen?</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>1</th>
+                                        <th>2</th>
+                                        <th>3</th>
+                                        <th>4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>g</td>
+                                        <td>n</td>
+                                        <td>s</td>
+                                        <td>a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e</td>
+                                        <td>a</td>
+                                        <td>n</td>
+                                        <td>l</td>
+                                    </tr>
+                                    <tr>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>d</td>
+                                        <td>r</td>
+                                    </tr>
+                                    <tr>
+                                        <td>v</td>
+                                        <td>g</td>
+                                        <td>l</td>
+                                        <td>o</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e</td>
+                                        <td>e</td>
+                                        <td>d</td>
+                                        <td>n</td>
+
+                                    <tr>
+                                        <td>o</td>
+                                        <td>r</td>
+                                        <td>d</td>
+                                        <td>p</td>
+                                    </tr>
+                                    <tr>
+                                        <td>a</td>
+                                        <td>t</td>
+                                        <td>h</td>
+                                        <td>c</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <form class="answer-form">
+                                <input type="text" class="js-answer" data-input="3" />
+                                <button type="button" class="clean-button js-check-button" data-check="3">Check antwoord</button>
+                                <div class="lock-container js-lock-container" data-container="3">
+                                    <img src="./images/lock.svg" class="lock js-lock is-visible" data-lock="3">
+                                    <img src="./images/unlock.svg" class="un-lock js-un-lock is-hidden" data-unlock="3">
+                                    <img src="./images/lock-red.svg" class="lock-red js-lock-red is-hidden" data-redlock="3">
+                                </div>
+                            </form>
+
+                            <div class="hint" data-hint>
+                                <button class="clean-button hint-button" data-button><img src="./images/help-circle.svg"><span>Ik heb een hint nodig</span></button>
+                                <p class="hint-text is-hidden" data-text>De hint is: 1432</p>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="challenge">
+                    <div class="door js-door-open" data-door="4">
+                        <div>
+                            <span class="number">4</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="4">Open</button>
+                    <dialog data-dialog="4">
+                        <div class="dialog-content">
+                            <button class="close-button" data-close="4"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 4</h1>
+                            <p>
+                                Voor de volgende opdracht moeten we de leeftijd van Harvey invullen. Kan jij achterhalen
+                                hoe oud Harvey is?
+                            </p>
+                            <p>
+                                10001
+                            </p>
+                            <form class="answer-form">
+                                <input type="text" class="js-answer" data-input="4" />
+                                <button type="button" class="clean-button js-check-button" data-check="4">Check antwoord</button>
+                                <div class="lock-container js-lock-container" data-container="4">
+                                    <img src="./images/lock.svg" class="lock js-lock is-visible" data-lock="4">
+                                    <img src="./images/unlock.svg" class="un-lock js-un-lock is-hidden" data-unlock="4">
+                                    <img src="./images/lock-red.svg" class="lock-red js-lock-red is-hidden" data-redlock="4">
+                                </div>
+                            </form>
+                            <div class="hint" data-hint>
+                                <button class="clean-button hint-button" data-button><img src="./images/help-circle.svg"><span>Ik heb een hint nodig</span></button>
+                                <p class="hint-text is-hidden" data-text>Hint: Zoek op Google naar 'binair getal omzetten'</p>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="challenge">
+                    <div class="door js-door-open" data-door="5">
+                        <div>
+                            <span class="number">5</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="5">Open</button>
+                    <dialog data-dialog="5">
+                        <div class="dialog-content">
+                            <button class="close-button" data-close="5"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 5</h1>
+                            <p>
+                                We weten nu hoe oud Harvey is. Naar welke film gaat Harvey? Vul de goede titel in om de
+                                volgende deur te ontgrendelen.
+                                <img src="./images/codesnippet.png" width="400px">
+                            </p>
+                            <form class="answer-form">
+                                <input type="text" class="js-answer" data-input="5" />
+                                <button type="button" class="clean-button js-check-button" data-check="5">Check antwoord</button>
+                                <div class="lock-container js-lock-container" data-container="5">
+                                    <img src="./images/lock.svg" class="lock js-lock is-visible" data-lock="5">
+                                    <img src="./images/unlock.svg" class="un-lock js-un-lock is-hidden" data-unlock="5">
+                                    <img src="./images/lock-red.svg" class="lock-red js-lock-red is-hidden" data-redlock="5">
+                                </div>
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="challenge">
+                    <div class="door js-door-open" data-door="6">
+                        <div>
+                            <span class="number">6</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="6">Open</button>
+                    <dialog data-dialog="6">
+                        <div class="dialog-content">
+                            <button class="close-button" data-close="6"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 6</h1>
+                            <p>Yes, gelukt! Tijd voor de volgende codekraker. Harvey probeert opnieuw een tekst te ontcijferen, maar hij heeft je hulp nodig!</p>
+                            <p>FMlf mfuufs jt ffo qmflkf pqhftdipwfo</p>
+                            <form class="answer-form">
+                                <input type="text" class="js-answer" data-input="6" />
+                                <button type="button" class="clean-button js-check-button" data-check="6">Check antwoord</button>
+                                <div class="lock-container js-lock-container" data-container="6">
+                                    <img src="./images/lock.svg" class="lock js-lock is-visible" data-lock="6">
+                                    <img src="./images/unlock.svg" class="un-lock js-un-lock is-hidden" data-unlock="6">
+                                    <img src="./images/lock-red.svg" class="lock-red js-lock-red is-hidden" data-redlock="6">
+                                </div>
+                            </form>
+
+                            <div class="hint" data-hint>
+                                <button class="clean-button hint-button" data-button><img src="./images/help-circle.svg"><span>Ik heb een hint nodig</span></button>
+                                <p class="hint-text is-hidden" data-text>Hint: Zoek op Google naar 'Caesar alfabet'.</p>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="challenge">
+                    <div class="door js-door-open" data-door="7">
+                        <div>
+                            <span class="number">7</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="7">Open</button>
+                    <dialog data-dialog="7">
+                        <div class="dialog-content">
+                            <button type="button" class="close-button" data-close="7"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 7</h1>
+                            <p>
+                                Kan jij erachter komen wat deze tekentjes betekenen?
+                                <img src="./images/pigpen.png">
+                            </p>
+                            <form class="answer-form">
+                                <input type="text" class="js-answer" data-input="7" />
+                                <button type="button" class="clean-button js-check-button" data-check="7">Check antwoord</button>
+                                <div class="lock-container js-lock-container" data-container="7">
+                                    <img src="./images/lock.svg" class="lock js-lock is-visible" data-lock="7">
+                                    <img src="./images/unlock.svg" class="un-lock js-un-lock is-hidden" data-unlock="7">
+                                    <img src="./images/lock-red.svg" class="lock-red js-lock-red is-hidden" data-redlock="7">
+                                </div>
+                            </form>
+                            <div class="hint" data-hint>
+                                <button type="button" class="clean-button hint-button" data-button><img src="./images/help-circle.svg"><span>Ik heb een hint nodig</span></button>
+                                <p class="hint-text is-hidden" data-text>Hint: Zoek op Google naar 'pig pen encryptie'.</p>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="challenge">
+                    <div class="door js-door-open" data-door="8">
+                        <div>
+                            <span class="number">8</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="8">Open</button>
+                    <dialog data-dialog="8">
+                        <div class="dialog-content">
+                            <button class="close-button" data-close="8"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 8</h1>
+                            <p>
+                                Harvey heeft drie huisdieren. Om de volgende deur te ontgrendelen, moeten we erachter komen
+                                hoe het bruine konijn van Harvey heet.
+                                <img src="./images/codesnippet2.png" width="200px">
+                            </p>
+                            <form class="answer-form">
+                                <input type="text" class="js-answer" data-input="8" />
+                                <button type="button" class="clean-button js-check-button" data-check="8">Check antwoord</button>
+                                <div class="lock-container js-lock-container" data-container="8">
+                                    <img src="./images/lock.svg" class="lock js-lock is-visible" data-lock="8">
+                                    <img src="./images/unlock.svg" class="un-lock js-un-lock is-hidden" data-unlock="8">
+                                    <img src="./images/lock-red.svg" class="lock-red js-lock-red is-hidden" data-redlock="8">
+                                </div>
+                            </form>
+                            <div class="hint" data-hint>
+                                <button class="clean-button hint-button" data-button><img src="./images/help-circle.svg"><span>Ik heb een hint nodig</span></button>
+                                <p class="hint-text is-hidden" data-text>Hint: </p>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="challenge">
+                    <div class="door js-door-open" data-door="9">
+                        <div>
+                            <span class="number">9</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="9">Open</button>
+                    <dialog data-dialog="9">
+                        <div class="dialog-content">
+                            <button class="close-button" data-close="9"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 9</h1>
+                            <p>
+                                Computers kunnen heel goed werken met cijfers, maar wat minder goed met letters.</br>
+                                Daarom gebruiken computers een soort code die letters vertaalt naar nummers.
+                                Die code heet ASCII. Om deze codekraker op te lossen, moeten we lezen als een computer.
+                            </p>
+                            <p>
+                                103 101 104 101 105 109 32 97 103 101 110 116   
+                            </p>
+                            <form class="answer-form">
+                                <input type="text" class="js-answer" data-input="9" />
+                                <button type="button" class="clean-button js-check-button" data-check="9">Check antwoord</button>
+                                <div class="lock-container js-lock-container" data-container="9">
+                                    <img src="./images/lock.svg" class="lock js-lock is-visible" data-lock="9">
+                                    <img src="./images/unlock.svg" class="un-lock js-un-lock is-hidden" data-unlock="9">
+                                    <img src="./images/lock-red.svg" class="lock-red js-lock-red is-hidden" data-redlock="9">
+                                </div>
+                            </form>
+                            <div class="hint" data-hint>
+                                <button class="clean-button hint-button" data-button><img src="./images/help-circle.svg"><span>Ik heb een hint nodig</span></button>
+                                <p class="hint-text is-hidden" data-text>Hint: Zoek op Google naar 'ASCII table' of 'ASCII converter'.</p>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="challenge">
+                    <div class="door js-door-open" data-door="10">
+                        <div>
+                            <span class="number">10</span>
+                        </div>
+                    </div>
+                    <button class="button open-challenge-button js-open-dialog-button" data-button="10">Open</button>
+                    <dialog data-dialog="10">
+                        <div class="dialog-content">
+                            <button class="close-button" data-close="10"><img src="./images/close.svg"></button>
+                            <h1>Codekraker 10</h1>
+                            <p>
+                                Wow! je bent er bijna, nog maar 1 klik en dan is de missie voltooid! Ga op zoek naar 
+                                waar je moet klikken, maar let op, er is nog maar weinig tijd..!
+                            </p>
+                            <p>
+                                Sluit met het kruisje eerst deze opdracht, voordat je begint te klikken!
+                            </p>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+        <div class="easter-egg js-easter-egg"></div>
+        <canvas id="confetti" class="js-confetti"></canvas>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
