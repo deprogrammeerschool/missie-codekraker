@@ -6,13 +6,19 @@
     const ANSWERS = {
         1: 'Samen voltooien we de missie!',
         2: 'beveiliging',
-        3: 'ga snel naar de volgende opdracht',
+        3: [
+            'gasnelnaardevolgendeopdracht',
+            'ga snel naar de volgende opdracht',
+        ],
         4: '17',
         5: 'Avatar',
         6: 'Elke letter is een plekje opgeschoven',
         7: 'wachtwoord',
         8: 'Sammie',
-        9: 'geheimagent'
+        9: [
+            'geheimagent',
+            'geheim agent'
+        ]
     }
 
     const forms = document.querySelectorAll('form');
@@ -172,7 +178,8 @@
             removeVisibleClass(correspondingRedLock);
             addVisibleClass(correspondingLock);
 
-            if (correspondingAnswer.value === ANSWERS[Number(dataAttrValue)]) {
+            if (correspondingAnswer.value === ANSWERS[Number(dataAttrValue)] ||
+             ANSWERS[Number(dataAttrValue)].includes(correspondingAnswer.value)) {
                 setTimeout(() => {
                     addHiddenClass(correspondingLock);
                     removeVisibleClass(correspondingLock);
@@ -226,7 +233,4 @@
     function removeVisibleClass(element) {
         element.classList.remove(VISIBLE_CLASS);
     }
-
-    
-
 })();
