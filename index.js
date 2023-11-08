@@ -178,8 +178,9 @@
             removeVisibleClass(correspondingRedLock);
             addVisibleClass(correspondingLock);
 
-            if (correspondingAnswer.value === ANSWERS[Number(dataAttrValue)] ||
-             ANSWERS[Number(dataAttrValue)].includes(correspondingAnswer.value)) {
+            if (correspondingAnswer.value === ANSWERS[Number(dataAttrValue)] || (Array.isArray(ANSWERS[Number(dataAttrValue)]) && ANSWERS[Number(dataAttrValue)].includes(correspondingAnswer.value)) )
+             {
+                console.log('true')
                 setTimeout(() => {
                     addHiddenClass(correspondingLock);
                     removeVisibleClass(correspondingLock);
